@@ -1,0 +1,9 @@
+{
+  "name": "@collabboard/backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"(placeholder) start backend dev after scaffolding\" && exit 0",
+    "build": "echo \"(placeholder) build backend\" && exit 0"
+  }
+}
