@@ -1,0 +1,27 @@
+{
+    "name": "collabboard",
+    "private": true,
+    "version": "0.1.0",
+    "description": "CollabBoard – A collaborative project management board for teams.",
+    "author": "Shudhanshu Choudhary <hello@shudhanshu.dev>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Shudhanshu-Choudhary/CollabBoard.git"
+    },
+    "workspaces": [
+        "apps/frontend",
+        "apps/backend"
+    ],
+    "scripts": {
+        "dev:frontend": "npm run -w apps/frontend dev",
+        "dev:backend": "npm run -w apps/backend dev",
+        "dev:all": "concurrently \"npm run -w apps/frontend dev\" \"npm run -w apps/backend dev\"",
+        "build:frontend": "npm run -w apps/frontend build",
+        "build:backend": "npm run -w apps/backend build",
+        "build": "npm run build:frontend && npm run build:backend"
+    },
+    "devDependencies": {
+        "concurrently": "^9.0.0"
+    }
+}
